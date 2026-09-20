@@ -4,7 +4,7 @@ Reproducibility repository for the manuscript:
 
 **Before Ranking Begins: A Multi-Year Study of Coverage Loss in EPSS-Based Vulnerability Triage**
 
-Active artifact baseline: **UNLISTED39 / Stagewise Coverage Reproducibility Package v1.1.0**.
+Active artifact baseline: **UNLISTED39 / Stagewise Coverage Reproducibility Package v1.1.1**.
 
 This repository reproduces the paper's stagewise coverage and miss-location measurements from a compact derived event summary. It does **not** rank vulnerabilities and does **not** claim to predict exploitation.
 
@@ -59,7 +59,7 @@ The repository stores the same input as `reported_public_event_input.csv.gz`.
 
 ## Fail-closed behavior
 
-The implementation rejects incomplete or internally inconsistent input rather than returning a partial result, including missing required columns, duplicate outcome IDs, invalid Boolean fields, non-positive capacities, empty input, and source-unobservable outcomes carrying finite ranks.
+The implementation rejects incomplete or internally inconsistent input rather than returning a partial result. Checks cover missing or blank required fields, duplicate identifiers or headers, invalid dates/Booleans/numbers, non-positive horizons or capacities, incomplete Top-1% flags, schedule/date mismatches, decision dates outside the declared pre-outcome horizon, and source-unobservable outcomes carrying rank, score, decision-date, or Top-1% capture values.
 
 ## Enterprise-field context
 
