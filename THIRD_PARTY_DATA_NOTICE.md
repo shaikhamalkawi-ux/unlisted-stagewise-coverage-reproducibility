@@ -1,0 +1,1 @@
+The public example is a derived stagewise coverage summary from public CISA KEV and historical FIRST EPSS data. Original third-party terms continue to apply. No raw third-party source archive is redistributed in this package.
