@@ -22,3 +22,5 @@ jobs:
           python-version: "3.13"
       - name: Reproduce locked stagewise coverage results
         run: python test_reported_results.py
+      - name: Verify publication-state artifact and locked integration
+        run: python test_release_package.py
